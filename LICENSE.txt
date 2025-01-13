@@ -1,0 +1,44 @@
+BeykeTechnik Retail Inventory Management System License
+Version 1.0, January 12, 2025
+
+Copyright (c) 2025 Kyle Beyke, kyle.beyke@gmail.com
+Tennessee, USA
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use
+the Software for non-commercial purposes only, subject to the following
+conditions:
+
+1. Non-Commercial Use: The Software may not be used for any for-profit
+   or commercial purpose without explicit written permission and a
+   commercial license obtained from Kyle Beyke. Contact
+   kyle.beyke@gmail.com for commercial licensing inquiries.
+
+2. Attribution: Any use of this Software must include proper attribution
+   to the original author, Kyle Beyke.
+
+3. Redistribution: Redistribution of the Software is permitted for
+   non-commercial purposes only, provided that the following conditions are met:
+   a. The original license text must be included without alteration.
+   b. No part of the Software may be sold or monetized in any form.
+
+4. Disclaimer of Warranty: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
+   OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+   DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
+   OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+5. Governing Law: This License shall be governed by and construed in
+   accordance with the laws of the State of Tennessee, USA. Any disputes
+   arising under this License shall be resolved in the courts of Tennessee.
+
+6. Termination: This License will terminate automatically if you fail to
+   comply with its terms and conditions. Upon termination, you must cease
+   all use of the Software and destroy all copies in your possession.
+
+By using this software, you acknowledge that you have read and understood this
+License and agree to be bound by its terms.
+
+For commercial licensing or inquiries, contact: kyle.beyke@gmail.com
