@@ -1,0 +1,1 @@
+requests + BeautifulSoup for link collection
