@@ -1,0 +1,21 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# macOS system files
+.DS_Store
+
+# IDE project files
+.idea/
+.vscode/
+
+# OS generated files
+Thumbs.db
