@@ -1,21 +1,38 @@
-# Python bytecode
-*.pyc
-*.pyo
+# Python bytecode and test artifacts.
 __pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Virtual environment
+# Virtual environments and local package output.
+.venv/
 venv/
+env/
+build/
+dist/
+*.egg-info/
 
-# Logs and databases
+# Runtime output.
 *.log
 *.sqlite3
+reports/
+src/reports/
+src/logs/
+src/seo_report_*.csv
+src/seo_report_*.html
+src/results.csv
+seo_report_*.csv
+seo_report_*.html
 
-# macOS system files
+# Local editor/OS artifacts.
 .DS_Store
-
-# IDE project files
+Thumbs.db
 .idea/
 .vscode/
+.history/
 
-# OS generated files
-Thumbs.db
+# Downloaded local datasets.
+src/nltk_data/
+src/utils/nltk_data/
