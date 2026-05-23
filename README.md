@@ -1,83 +1,76 @@
 # SEO Analysis and Reporting GUI
 
-A powerful SEO analysis and reporting tool with a user-friendly GUI, leveraging advanced web scraping, page analysis, and reporting capabilities.
+A Python SEO analysis tool with both a PyQt desktop interface and a command-line sitemap reporting workflow.
+
+The application can crawl sitemap URLs, collect on-page SEO signals, and export report files for review. The GUI is useful for manual analysis sessions, while the CLI entry point is useful for repeatable sitemap runs.
 
 ## Features
 
-- **GUI Application**: Intuitive PyQt5-based interface for ease of use.
-- **Page Analysis**: Extracts titles, meta descriptions, headings, word counts, keywords, and more.
-- **Sitemap Crawling**: Gathers links from sitemaps or uses fallback BFS crawling.
-- **PageSpeed Insights**: Integrates with Google's PageSpeed API for performance scores.
-- **Keyword Analysis**: Tokenizes and stems text for advanced keyword extraction.
-- **Multithreading and Multiprocessing**: Ensures efficient processing of multiple pages.
-- **Export Reports**: Generates detailed CSV and HTML reports.
+- PyQt5 desktop interface for starting SEO analysis runs.
+- Sitemap parsing and URL filtering.
+- Page-level checks for titles, meta descriptions, headings, word counts, and keyword signals.
+- CSV/HTML report generation.
+- Optional Google PageSpeed API integration.
+- Threaded worker utilities for longer crawls.
 
-## Project Structure
+## Repository Layout
 
+```text
 SEO-Analysis-Reporting-GUI/
+├── main.py                 # GUI launcher
 ├── src/
-│   ├── gui/                   # GUI-related components
-│   ├── core/                  # Core application logic
-│   ├── utils/                 # Utility modules
-│   ├── tests/                 # Unit tests
-├── assets/                    # Static files (e.g., icons, images)
-├── requirements.txt           # Python dependencies
-├── .gitignore                 # Files/directories to exclude from version control
-├── README.md                  # Project documentation
-├── LICENSE                    # License file
-└── seo_analysis.log           # Log file (excluded via .gitignore)
+│   ├── core/               # Page analysis and worker logic
+│   ├── gui/                # PyQt interface
+│   ├── parsers/            # Sitemap and robots helpers
+│   └── utils/              # Reporting, logging, URL, and text utilities
+├── scripts/
+│   └── validate.sh         # Lightweight repository validation
+├── requirements.txt
+└── README.md
+```
 
-## Installation
+## Setup
 
-### Prerequisites
-
-- Python 3.8+
-- Pip (Python package installer)
-
-### Steps
-
-1. Clone the repository:
-git clone https://github.com/your-username/SEO-Analysis-Reporting-GUI.git
+```bash
+git clone https://github.com/KyleBeyke/SEO-Analysis-Reporting-GUI.git
 cd SEO-Analysis-Reporting-GUI
-
-2. Create and activate a virtual environment:
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-3. Install dependencies:
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+```
 
-4. Launch the application:
-python src/gui/main_window.py
+## Run The GUI
 
-## Usage
+```bash
+python main.py
+```
 
-1. Open the application.
-2. Enter the domain or URL for analysis.
-3. Configure optional settings:
-   - Password for protected pages.
-   - PageSpeed API Key.
-   - Maximum number of pages.
-4. Click "Start Analysis" to begin.
+## Run From The CLI
 
-## Contributing
+```bash
+python src/main.py https://example.com/sitemap.xml --base-domain example.com --output-dir reports
+```
 
-1. Fork the repository.
-2. Create a feature branch:
-git checkout -b feature-name
+## Validate The Repository
 
-3. Commit changes:
-git commit -m "Description of changes"
+```bash
+scripts/validate.sh
+```
 
-4. Push to your branch:
-git push origin feature-name
+The validation script compiles the source files and checks that committed generated artifacts have not crept back into the working tree.
 
-5. Submit a pull request.
+## Generated Files
+
+Keep local runtime output out of version control:
+
+- `.venv/` or `venv/`
+- `.history/`
+- `.DS_Store`
+- `*.log`
+- `reports/`
+- generated SEO report CSV/HTML files
+- downloaded NLTK data
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Support
-
-For questions or issues, please open an issue at https://github.com/your-username/SEO-Analysis-Reporting-GUI/issues.
+This project is licensed under the terms in [LICENSE.txt](LICENSE.txt).
